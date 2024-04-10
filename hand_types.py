@@ -167,4 +167,89 @@ class HandTypes:
         elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: score = 1
         else: score = 0
         return score
+    
+    def findHandType(card1, card2, card3, card4, card5):
+        handType = "Paskaa"
+        if HandTypes.countStars(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 5: handType = "Vitoset"
+        elif HandTypes.countStars(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 4: handType = "Neloset"
+        elif HandTypes.countStars(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countStars(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countStars(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countStars(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countStars(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 3:
+            if HandTypes.countStars(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "Täyskäsi"
+            else: handType = "Kolmoset"
+        elif HandTypes.countStars(card1, card2, card3, card4, card5) == 2:
+            if HandTypes.countMarios(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            else: handType = "1 Pari"
+        elif HandTypes.countMarios(card1, card2, card3, card4, card5) == 2:
+            if HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            else: handType = "1 Pari"
+        elif HandTypes.countLuigis(card1, card2, card3, card4, card5) == 2:
+            if HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            else: handType = "1 Pari"
+        elif HandTypes.countFlowers(card1, card2, card3, card4, card5) == 2:
+            if HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            else: handType = "1 Pari"
+        elif HandTypes.countMushrooms(card1, card2, card3, card4, card5) == 2:
+            if HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "2 Paria"
+            else: handType = "1 Pari"
+        elif HandTypes.countClouds(card1, card2, card3, card4, card5) == 2: handType = "1 Pari"
+        else: handType = "Paskaa"
+        return handType
 
