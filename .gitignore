@@ -1,4 +1,6 @@
 /.vscode
+/src/__pycache__
+/build
 /__pycache__
 /build.bat
 /korttipeli.spec
